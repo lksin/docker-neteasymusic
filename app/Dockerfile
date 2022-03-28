@@ -20,8 +20,7 @@ RUN set -ex \
 
 RUN set -ex \
     && git clone https://github.com/jsososo/QQMusicApi.git \
-    && cd QQMusicApi\
-    && yarn build:docker
+    && cd QQMusicApi
 
 RUN set -ex \
     && git clone https://github.com/jsososo/MixMusicApi.git \
