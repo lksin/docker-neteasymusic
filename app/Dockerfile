@@ -31,7 +31,7 @@ RUN set -ex \
 
 COPY entrypoint.sh /entrypoint.sh
 
-ENV QQ 1234567
+ENV QQ 2517871772
 
 ENTRYPOINT ["/entrypoint.sh"]
 
