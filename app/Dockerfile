@@ -21,8 +21,7 @@ RUN set -ex \
 RUN set -ex \
     && git clone https://github.com/jsososo/QQMusicApi.git \
     && cd QQMusicApi\
-    && npm cache clear --force\
-    && npm install
+    && yarn build:docker
 
 RUN set -ex \
     && git clone https://github.com/jsososo/MixMusicApi.git \
