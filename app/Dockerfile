@@ -19,6 +19,7 @@ RUN set -ex \
     && npm install
 
 RUN set -ex \
+    && cd \
     && cp -rf /root/qqmusic-api/QQMusicApi/* /usr/src/app/QQMusicApi
 
 RUN set -ex \
