@@ -20,7 +20,8 @@ RUN set -ex \
 
 RUN set -ex \
     && git clone https://github.com/jsososo/QQMusicApi.git \
-    && cd QQMusicApi
+    && cd QQMusicApi \
+    && npm install
 
 RUN set -ex \
     && git clone https://github.com/jsososo/MixMusicApi.git \
