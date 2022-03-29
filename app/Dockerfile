@@ -19,8 +19,9 @@ RUN set -ex \
     && npm install
 
 RUN set -ex \
-    && cd \
-    && cp -rf /root/qqmusic-api/QQMusicApi/* /usr/src/app/QQMusicApi
+     && git clone https://github.com/jsososo/QQMusicApi.git \
+     && cd QQMusicApi \
+     && yarn
 
 RUN set -ex \
     && git clone https://github.com/jsososo/MixMusicApi.git \
